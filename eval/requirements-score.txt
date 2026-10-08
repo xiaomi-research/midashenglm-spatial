@@ -1,0 +1,18 @@
+# Scoring environment for MMAU-Pro (eval/mmaupro/eval.py).
+#
+# MUST be a SEPARATE environment from the inference env (../requirements.txt):
+# nvidia/NV-Embed-v2 pins transformers==4.42.4, which is older than the >=4.52.1
+# the model's custom code requires. Trying to share one env breaks one side or
+# the other, hence the two-step run (infer -> score).
+#
+# Versions below match a known-good `nvembed` conda env.
+torch==2.6.0
+torchaudio==2.6.0
+transformers==4.42.4          # pinned by NV-Embed-v2; do not bump
+tokenizers==0.19.1            # ships with transformers 4.42.4
+numpy==1.26.4                 # NV-Embed / older stack expects numpy<2
+accelerate==1.12.0            # Qwen2.5-7B judge (device_map="auto")
+sentence-transformers==2.7.0  # required by NV-Embed-v2 trust_remote_code
+einops==0.8.2                 # required by NV-Embed-v2 trust_remote_code
+nltk==3.9.3                   # instruction-following sentence counting
+datasets==4.6.1
