@@ -2,7 +2,7 @@
 
 ***Unifying General Audio Understanding and Spatial Awareness***
 
-[![arXiv](https://img.shields.io/badge/arXiv-2610.11804-b31b1b)](???)&nbsp;&nbsp;[![HuggingFace Model](https://img.shields.io/badge/HuggingFace-Model-FFD21E)](https://huggingface.co/mispeech/midashenglm-spatial-7b)&nbsp;&nbsp;[![Demo Page](https://img.shields.io/badge/Demo-Page-0366d6)](???)&nbsp;&nbsp;[![GitHub](https://img.shields.io/badge/GitHub-Repo-181717)](https://github.com/xiaomi-research/midashenglm-spatial)
+[![arXiv](https://img.shields.io/badge/arXiv-2610.11804-b31b1b)](???)&nbsp;&nbsp;[![HuggingFace Model](https://img.shields.io/badge/HuggingFace-Model-FFD21E)](https://huggingface.co/mispeech/midashenglm-spatial)&nbsp;&nbsp;[![Demo Page](https://img.shields.io/badge/Demo-Page-0366d6)](???)&nbsp;&nbsp;[![GitHub](https://img.shields.io/badge/GitHub-Repo-181717)](https://github.com/xiaomi-research/midashenglm-spatial)
 
 ## Overview
 
