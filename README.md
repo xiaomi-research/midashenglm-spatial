@@ -2,7 +2,7 @@
 
 ***Unifying General Audio Understanding and Spatial Awareness***
 
-[![arXiv](https://img.shields.io/badge/arXiv-2610.11804-b31b1b)](???)&nbsp;&nbsp;[![HuggingFace Model](https://img.shields.io/badge/HuggingFace-Model-FFD21E)](https://huggingface.co/mispeech/midashenglm-spatial)&nbsp;&nbsp;[![Demo Page](https://img.shields.io/badge/Demo-Page-0366d6)](???)&nbsp;&nbsp;[![GitHub](https://img.shields.io/badge/GitHub-Repo-181717)](https://github.com/xiaomi-research/midashenglm-spatial)
+[![arXiv](https://img.shields.io/badge/arXiv-2610.11156-b31b1b)](https://arxiv.org/abs/2610.11156)&nbsp;&nbsp;[![HuggingFace Model](https://img.shields.io/badge/HuggingFace-Model-FFD21E)](https://huggingface.co/mispeech/midashenglm-spatial)&nbsp;&nbsp;[![Demo Page](https://img.shields.io/badge/Demo-Page-0366d6)](???)&nbsp;&nbsp;[![GitHub](https://img.shields.io/badge/GitHub-Repo-181717)](https://github.com/xiaomi-research/midashenglm-spatial)
 
 ## Overview
 
@@ -132,11 +132,11 @@ with torch.no_grad():
     print(processor.tokenizer.batch_decode(generation, skip_special_tokens=True))
 ```
 
-Put audio **before** text (the trained order), and feed real binaural `(2, T)` audio — mono still runs but carries no direction. A runnable version is in `[example/inference.py](example/inference.py)`.
+Put audio **before** text (the trained order), and feed real binaural `(2, T)` audio — mono still runs but carries no direction. A runnable version is in [`example/inference.py`](example/inference.py).
 
 ## Evaluation
 
-Evaluation code and commands: see `[eval/](eval/)`. You should download [MMAU-Pro](https://huggingface.co/datasets/gamma-lab-umd/MMAU-Pro) and [STAR-Bench](https://huggingface.co/datasets/internlm/STAR-Bench) before running evaluation scripts.
+Evaluation code and commands: see [`eval/`](eval/). You should download [MMAU-Pro](https://huggingface.co/datasets/gamma-lab-umd/MMAU-Pro) and [STAR-Bench](https://huggingface.co/datasets/internlm/STAR-Bench) before running evaluation scripts.
 
 Expected benchmark data layout (second-level directories shown):
 
@@ -159,6 +159,15 @@ bash scripts/run_mmaupro.sh     # MMAU-Pro inference + scoring (two conda envs)
 
 ## Citation
 
+```bibtex
+@article{hu2026midashenglmspatial,
+      title={MiDashengLM-Spatial: Unifying General Audio Understanding and Spatial Awareness}, 
+      author={Jinbo Hu and Hang Su and Lichun Fan and Heinrich Dinkel and Gang Li and Zhanchen Dai and Yiru Zhang and Chang Liu and Peng Wang and Junnan Wu and Jian Luan and Cong Zou and Heng Qu},
+      year={2026},
+      journal={arXiv preprint arxiv:2610.11156},
+}
+```
+
 ## License
 
-Released under the Apache License 2.0 (see [LICENSE](LICENSE)), for both research and commercial use.
+Released under the Apache License 2.0 (see [LICENSE](./LICENSE)), for both research and commercial use.
