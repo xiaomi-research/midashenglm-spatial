@@ -2,7 +2,7 @@
 
 ***Unifying General Audio Understanding and Spatial Awareness***
 
-[![arXiv](https://img.shields.io/badge/arXiv-2610.11156-b31b1b)](https://arxiv.org/abs/2610.11156)&nbsp;&nbsp;[![HuggingFace Model](https://img.shields.io/badge/HuggingFace-Model-FFD21E)](https://huggingface.co/mispeech/midashenglm-spatial)&nbsp;&nbsp;[![Demo Page](https://img.shields.io/badge/Demo-Page-0366d6)](???)&nbsp;&nbsp;[![GitHub](https://img.shields.io/badge/GitHub-Repo-181717)](https://github.com/xiaomi-research/midashenglm-spatial)
+[![arXiv](https://img.shields.io/badge/arXiv-2610.11156-b31b1b)](https://arxiv.org/abs/2610.11156)&nbsp;&nbsp;[![HuggingFace Model](https://img.shields.io/badge/HuggingFace-Model-FFD21E)](https://huggingface.co/mispeech/midashenglm-spatial)&nbsp;&nbsp;[![Demo Page](https://img.shields.io/badge/Demo-Page-0366d6)](https://jinbo-hu.github.io/midashenglm-spatial-demo)&nbsp;&nbsp;[![GitHub](https://img.shields.io/badge/GitHub-Repo-181717)](https://github.com/xiaomi-research/midashenglm-spatial)
 
 ## Overview
 
@@ -14,7 +14,7 @@
 - **Spatial-Dasheng** : A spatial audio encoder that performs frame-wise detection and localization of overlapping sound events.
 - **Hierarchical Semantic-to-Spatial Conditioning (HSSC)**: A conditioning mechanism that hierarchically conveys intermediate semantic representations from the semantic branch to corresponding layers of the spatial branch, allowing spatial modeling to leverage semantic context while preserving the functional separation of the two branches.
 - **Scalable spatial-scene synthesis**: A data pipeline that constructs 1M spatial acoustic scenes (~13,000 hours) involving environmental sounds, speech, and music, together with rich scene-level spatial descriptions and 6M fact-verified QA pairs.
-- **Robust spatial perception without compromising generality**: Extensive experiments demonstrate that Spatial-Dasheng delivers robust spatial perception and sim-to-real generalization, while MiDashengLM-Spatial acquires spatial awareness without sacrificing general audio understanding.
+- **Robust spatial awareness without compromising generality**: Extensive experiments demonstrate that Spatial-Dasheng delivers robust spatial perception and sim-to-real generalization, while MiDashengLM-Spatial acquires spatial awareness without sacrificing general audio understanding.
 
 ## Architecture
 
